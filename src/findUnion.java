@@ -17,7 +17,7 @@ public class findUnion {
                     j++;
                 }
             }
-            while (i < n) // IF any element left in arr1
+            while (i < n)
             {
                 if (Union.get(Union.size()-1) != arr1[i])
                     Union.add(arr1[i]);
