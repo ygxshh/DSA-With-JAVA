@@ -1,5 +1,16 @@
 package OOPS;
 
+public class Encapsulation {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("Yogesh");
+        person.setAge(21);
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
+        person.setAge(-5);
+    }
+}
+
 class Person {
     private String name;
     private int age;
@@ -25,13 +36,4 @@ class Person {
     }
 }
 
-public class Encapsulation {
-    public static void main(String[] args) {
-        Person person = new Person();
-        person.setName("Yogesh");
-        person.setAge(21);
-        System.out.println("Name: " + person.getName());
-        System.out.println("Age: " + person.getAge());
-        person.setAge(-5);
-    }
-}
+
