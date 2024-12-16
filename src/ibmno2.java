@@ -11,18 +11,13 @@ public class ibmno2 {
         List<String> r = new ArrayList<>();
 
         for (String subject : subjects) {
-            // Convert the subject to lowercase and split into words
             String[] subjectWords = subject.toLowerCase().split(" ");
-
-            // Count the number of spam words in the subject
             int sc = 0;
             for (String word : subjectWords) {
                 if (spamWordsSet.contains(word)) {
                     sc++;
                 }
             }
-
-            // Determine if the email is spam or not_spam
             if (sc >= 2) {
                 r.add("spam");
             } else {
